@@ -23,7 +23,7 @@ foreach ($styles as $key => $style_menu) {
     $selected_html="";
   }
   $styles_html.="
-    <option value='$style_menu[1]' $selected_html>$style_menu[0]</option>
+    <option value='$style_menu[1]' $selected_html>$style_menu[0]&nbsp;&nbsp;</option>
   ";
 }
 
@@ -49,7 +49,6 @@ if ($style==null) {
   ";
 }
 
-
 $page="
 <!DOCTYPE html>
 <html lang='en'>
@@ -60,17 +59,17 @@ $page="
   <link rel='stylesheet' href='style/style.css'>
 </head>
 <body>
-  <div class='container-fluid'>
+  <div class='container'>
     <div class='col-xs-12'>
-      <h1><a id='title' href='./'>Baby Name Generator</a></h1>
+      <h1>
+        <a id='title' href='./'>Baby Name Generator</a>
+      </h1>
 
       <form method='get' action='./''>
 
         <!-- LAST NAME -->
-        <div id='last-name-field'>
-          Last Name:
-          <input type='text' name='last_name' $last_name_placeholder $lastName_value>
-        </div>
+        Last Name:
+        <input id='last-name-field' type='text' name='last_name' $last_name_placeholder $lastName_value>
 
         <!-- STYLE SELECT -->
         <p>
@@ -86,6 +85,13 @@ $page="
         <input class='submit' type='submit' style='margin-top:40px;'>
 
       </form>
+
+      <a href='../../'>
+        <p style='margin-top:1em;font-size:0.75em'>
+          back to Darth Pickle
+        </p>
+      </a>
+
     </div>
   </div>
   $bootstrap_js_code

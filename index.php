@@ -21,10 +21,13 @@ $last_name = (isset( $_GET["last_name"] ) ? $_GET["last_name"] : null );
 
 // STYLES LIST
 $styles=array(
-  array("Basketball","bball"),
-  array("Game of Thrones","thrones"),
-  array("Star Wars","starwars"),
-  array("Futurama","futurama"),
+  // array("Basketball","bball"),
+  array("Science Fiction","scifi"),
+  array("Sports","sports"),
+  array("Television","television"),
+  // array("Game of Thrones","thrones"),
+  // array("Star Wars","starwars"),
+  // array("Futurama","futurama"),
 );
 
 // get the names if the style is set

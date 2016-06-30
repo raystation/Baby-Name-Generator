@@ -12,33 +12,38 @@ body {
 a:link, a:visited {
   color: default; }
 
+input:focus {
+  outline: 0; }
+
 #title {
   font-weight: 900;
-  font-family: 'BioRhyme', serif; }
+  font-size: 40px;
+  font-family: 'BioRhyme', serif;
+  margin: 0; }
   #title:hover {
     text-decoration: none; }
 
-#last-name-field {
-  margin: 1em 0;
-  display: inline-block; }
-  #last-name-field input {
-    color: default;
-    background-color: #fffff8;
-    border: 0;
-    border-bottom: 1px solid rgba(128, 128, 128, 0.5); }
-    #last-name-field input:focus {
-      outline: none; }
+input#last-name-field {
+  margin: 0;
+  margin-bottom: 0.5em;
+  color: default;
+  background-color: #fffff8;
+  border: 0;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.5); }
+  input#last-name-field:focus {
+    outline: none; }
 
 .select-menu {
   background-color: #028eff;
   color: white;
   border: 0;
   padding: 12px;
-  box-shadow: 0 0.25em #0072ce; }
+  box-shadow: 0 0.25em #0072ce;
+  margin-top: 0.5em; }
   .select-menu:focus {
     outline: none; }
   .select-menu option {
-    margin-right: 1em; }
+    padding-right: 1em; }
 
 .submit {
   background-color: #028eff;
@@ -56,9 +61,11 @@ a:link, a:visited {
 .text-center {
   text-align: center; }
 
-.name-list {
-  margin-top: 2em;
-  text-align: left; }
+ol.name-list {
+  margin-top: 1em;
+  text-align: left;
+  padding-left: 0;
+  list-style-position: inside; }
 
 .show {
   display: inherit; }

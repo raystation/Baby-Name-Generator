@@ -15,31 +15,31 @@ body {
   font-family: 'Work Sans', sans-serif;
   font-size: 26px;
   font-weight: 100;
-  // letter-spacing: 1px;
   padding-bottom: 100px;
 }
 a:link, a:visited{
   color: $text-color;
 }
+input:focus {
+  outline: 0;
+}
 #title {
   font-weight: 900;
+  font-size: 40px;
   font-family: 'BioRhyme', serif;
-  &:hover {
-    text-decoration: none;
-  }
+  margin: 0;
+  &:hover {text-decoration: none;}
 }
-#last-name-field {
-  margin: 1em 0;
-  display: inline-block;
-  input {
-    color: $text-color;
-    background-color: $body_color;
-    border: 0;
-    border-bottom: 1px solid hsla(0, 0%, 50%, 0.5) ;
-    // width: 100%;
-    &:focus {
-      outline:none;
-    }
+input#last-name-field {
+  margin: 0;
+  margin-bottom: 0.5em;
+  color: $text-color;
+  background-color: $body_color;
+  border: 0;
+  border-bottom: 1px solid hsla(0, 0%, 50%, 0.5) ;
+  // width: 100%;
+  &:focus {
+    outline:none;
   }
 }
 .select-menu {
@@ -48,11 +48,12 @@ a:link, a:visited{
   border: 0;
   padding: 12px;
   box-shadow: 0 0.25em $button-color;
+  margin-top: 0.5em;
   &:focus {
     outline:none;
   }
   option {
-    margin-right: 1em;
+    padding-right: 1em;
   }
 }
 .submit {
@@ -73,9 +74,11 @@ a:link, a:visited{
 .text-center {
   text-align: center;
 }
-.name-list {
-  margin-top: 2em;
+ol.name-list {
+  margin-top: 1em;
   text-align: left;
+  padding-left:0;
+  list-style-position:inside;
 }
 
 // ========================
