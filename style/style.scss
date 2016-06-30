@@ -1,0 +1,112 @@
+@import "../../../css/normalize.css";
+@import "slider.css";
+@import 'https://fonts.googleapis.com/css?family=BioRhyme:400,700|Work+Sans:400,500,700';
+
+$button-color: #0072CE;
+$body_color: #fffff8;;
+$text-color: default;
+
+// DARK MODE
+// $text-color: white;
+// $body_color: hsla(0, 0%, 20%, 1);
+body {
+  background-color: $body_color;
+  color: $text-color;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 26px;
+  font-weight: 100;
+  // letter-spacing: 1px;
+  padding-bottom: 100px;
+}
+a:link, a:visited{
+  color: $text-color;
+}
+#title {
+  font-weight: 900;
+  font-family: 'BioRhyme', serif;
+  &:hover {
+    text-decoration: none;
+  }
+}
+#last-name-field {
+  margin: 1em 0;
+  display: inline-block;
+  input {
+    color: $text-color;
+    background-color: $body_color;
+    border: 0;
+    border-bottom: 1px solid hsla(0, 0%, 50%, 0.5) ;
+    // width: 100%;
+    &:focus {
+      outline:none;
+    }
+  }
+}
+.select-menu {
+  background-color: lighten($button-color,10%);
+  color: white;
+  border: 0;
+  padding: 12px;
+  box-shadow: 0 0.25em $button-color;
+  &:focus {
+    outline:none;
+  }
+  option {
+    margin-right: 1em;
+  }
+}
+.submit {
+  background-color: lighten($button-color,10%);
+  color: $body_color;
+  border: 0;
+  padding: 4px 14px;
+  border-radius: 6px;
+  box-shadow: 0 0.25em $button-color;
+  &:hover {
+    box-shadow: 0 0.125em $button-color;
+    transform: translateY(3px);
+  }
+  &:focus {
+    outline:none;
+  }
+}
+.text-center {
+  text-align: center;
+}
+.name-list {
+  margin-top: 2em;
+  text-align: left;
+}
+
+// ========================
+// HELPER CLASS
+.show {
+  display: inherit;
+}
+
+// ========================
+// debug
+
+.debug {
+  z-index: 10;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  text-align: right;
+  font-family: "Input Sans";
+  font-size: 15px;
+  padding: 5px;
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    li {
+      display: inline-block;
+      margin-right: 0.125em;
+      background-color: darken($body_color,20%);
+      padding: 0px 12px;
+      border-radius: 5px;
+    }
+  }
+}

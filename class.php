@@ -1,0 +1,47 @@
+<?php
+ require_once "./names-database.php";
+
+class Person {
+  public $name_first;
+  public $name_last;
+
+  function __construct($names_array) {
+    $this->names_array = $names_array;
+  }
+
+  function random_person(){
+    $random_number = array_rand($this->names_array);
+    return $this->names_array[$random_number];
+  }
+}
+
+$sarah = new Person( bball() );
+
+echo $sarah->random_person();
+
+?>
+
+
+<?php
+
+// class Fish {
+//   public $common_name;
+//   public $flavor;
+//   public $record_weight;
+
+//   function __construct($name, $flavor, $record) {
+//     $this->common_name = $name;
+//     $this->flavor=$flavor;
+//     $this->record_weight=$record;
+//   }
+
+//   function getInfo() {
+//     return "A ". $this->common_name . " is an " . $this->flavor . " flavored fish. The world record weight is ".$this->record_weight.". ";
+//   }
+// }
+
+// $bass=new Fish("Largemouth Bass","Excellent","22 pounds 5 ounces");
+// $porgy=new Fish("Porgy","disgusting","15 pounds 3 ounces");
+// echo $bass->getInfo();
+// echo $porgy->getInfo();
+?>

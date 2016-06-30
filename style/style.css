@@ -1,0 +1,85 @@
+@import url(../../../css/normalize.css);
+@import url(slider.css);
+@import 'https://fonts.googleapis.com/css?family=BioRhyme:400,700|Work+Sans:400,500,700';
+body {
+  background-color: #fffff8;
+  color: default;
+  font-family: 'Work Sans', sans-serif;
+  font-size: 26px;
+  font-weight: 100;
+  padding-bottom: 100px; }
+
+a:link, a:visited {
+  color: default; }
+
+#title {
+  font-weight: 900;
+  font-family: 'BioRhyme', serif; }
+  #title:hover {
+    text-decoration: none; }
+
+#last-name-field {
+  margin: 1em 0;
+  display: inline-block; }
+  #last-name-field input {
+    color: default;
+    background-color: #fffff8;
+    border: 0;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.5); }
+    #last-name-field input:focus {
+      outline: none; }
+
+.select-menu {
+  background-color: #028eff;
+  color: white;
+  border: 0;
+  padding: 12px;
+  box-shadow: 0 0.25em #0072ce; }
+  .select-menu:focus {
+    outline: none; }
+  .select-menu option {
+    margin-right: 1em; }
+
+.submit {
+  background-color: #028eff;
+  color: #fffff8;
+  border: 0;
+  padding: 4px 14px;
+  border-radius: 6px;
+  box-shadow: 0 0.25em #0072ce; }
+  .submit:hover {
+    box-shadow: 0 0.125em #0072ce;
+    transform: translateY(3px); }
+  .submit:focus {
+    outline: none; }
+
+.text-center {
+  text-align: center; }
+
+.name-list {
+  margin-top: 2em;
+  text-align: left; }
+
+.show {
+  display: inherit; }
+
+.debug {
+  z-index: 10;
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  text-align: right;
+  font-family: "Input Sans";
+  font-size: 15px;
+  padding: 5px; }
+  .debug ul {
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .debug ul li {
+      display: inline-block;
+      margin-right: 0.125em;
+      background-color: #ffff92;
+      padding: 0px 12px;
+      border-radius: 5px; }
